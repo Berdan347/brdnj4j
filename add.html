@@ -1,1 +1,62 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BRDNJ4J • Sunucu Ekle</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">B</div>
+        <div>
+          <div style="line-height:1;">BRDNJ4J</div>
+          <div class="small">Sunucu Ekle</div>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="servers.html">Sunucular</a>
+        <a href="how.html">Nasıl Çalışır</a>
+        <a href="add.html">Sunucu Ekle</a>
+        <a class="btn primary" href="https://discord.gg/VVWNQ3RFvX" target="_blank" rel="noopener">Discord</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="h-card">
+      <div class="kicker">BRDNJ4J • Form</div>
+      <h1 style="margin-bottom:6px;">Sunucu Ekle</h1>
+      <p class="lead">Şimdilik cihazda kayıtlı demo. Sonraki aşamada: Discord login + admin onay + gerçek veritabanı.</p>
+
+      <div class="hr"></div>
+
+      <form id="addForm" style="display:grid; gap:12px; max-width:640px;">
+        <input class="input" name="name" placeholder="Sunucu Adı (zorunlu)" required />
+        <select id="addCat" name="category"></select>
+        <input class="input" name="invite" placeholder="Discord Davet Linki (https://discord.gg/...)" required />
+        <input class="input" name="tags" placeholder="Etiketler (virgülle) ör: oyun, sohbet, partner" />
+        <textarea class="input" name="desc" rows="5" placeholder="Kısa açıklama (zorunlu)" required style="resize:vertical;"></textarea>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn primary" type="submit">Ekle</button>
+          <a class="btn" href="servers.html">İptal</a>
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="small">BRDNJ4J • profesyonel açık tema</div>
+    </div>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+  <script>BRDNJ4J.initAddPage();</script>
+</body>
+</html>
+
 
