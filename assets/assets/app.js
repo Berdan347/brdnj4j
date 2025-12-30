@@ -37,6 +37,12 @@ function renderServers(list, targetEl){
     const tags = (s.tags || []).slice(0,6).map(t => `<span class="badge">#${escapeHtml(t)}</span>`).join(" ");
     return `
       <div class="card">
+              <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px;">
+          <span class="badge">✅ Onaylı</span>
+          <span class="badge">🔥 Popüler</span>
+          <span class="badge">🆕 Yeni</span>
+        </div>
+
         <div class="server">
           <div class="left">
             <h3>${escapeHtml(s.name)}</h3>
