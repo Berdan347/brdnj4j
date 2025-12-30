@@ -1,0 +1,16 @@
+/* TEST CSS - YÜKLENİYOR MU DİYE */
+body{
+  background:#f6f7fb;
+  font-family: Arial, sans-serif;
+}
+
+.nav{
+  background:white;
+  padding:16px;
+  border-bottom:1px solid #ddd;
+}
+
+.btn.primary{
+  background:#2563eb;
+  color:white;
+}
