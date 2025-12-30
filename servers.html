@@ -1,1 +1,55 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BRDNJ4J • Sunucular</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="logo">B</div>
+        <div>
+          <div style="line-height:1;">BRDNJ4J</div>
+          <div class="small">Sunucu Keşfet</div>
+        </div>
+      </a>
+
+      <div class="nav-links">
+        <a href="servers.html">Sunucular</a>
+        <a href="how.html">Nasıl Çalışır</a>
+        <a href="add.html">Sunucu Ekle</a>
+        <a class="btn primary" href="https://discord.gg/VVWNQ3RFvX" target="_blank" rel="noopener">Discord</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="h-card">
+      <div class="kicker">BRDNJ4J • Liste</div>
+      <h1 style="margin-bottom:6px;">Sunucular</h1>
+      <p class="lead">Kategori seç, arama yap, hızlıca keşfet.</p>
+
+      <div class="toolbar">
+        <input id="q" class="input" placeholder="Sunucu ara (isim, etiket, açıklama)..." />
+        <select id="cat"></select>
+        <a class="btn" href="add.html">Sunucu Ekle</a>
+      </div>
+    </div>
+
+    <div class="section" id="serversList"></div>
+
+    <div class="footer">
+      <div>Bir sunucu eklemek için <a class="badge" href="add.html">Sunucu Ekle</a></div>
+    </div>
+  </div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+  <script>BRDNJ4J.initServersPage();</script>
+</body>
+</html>
+
 
